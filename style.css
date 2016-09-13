@@ -1,0 +1,299 @@
+/* 
+
+nav text - #4d4d4d;
+header text - #4d4d4d;
+header background - #F2F3F5
+main text- #393939
+button color - #F06167
+lighter text color - #C7C7C7
+footer  color - #2D2C31
+
+*/
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 205px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav .logo {
+    padding: 50px 0;
+}
+
+nav a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F06167;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 50px 20px;
+}
+
+header {
+    background-color: #f1f4f5;
+    height: 205px;
+}
+
+header h1 {
+    color: #4d4d4d;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+header p {
+    color: #808080;
+    padding-top: 10px;
+}
+
+.banner,
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#works {
+    padding-top: 80px;
+}
+
+#works h3 {
+    text-transform: uppercase;
+    margin-left: 1%;
+    float: left;
+}
+
+#works button {
+    border: none;
+    width: 123px;
+    height:42px;
+    background-color: #ef5f60;
+    color: #fff;
+    font-size: 14.29px;
+    text-transform: uppercase;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 1.5%;
+}
+
+.works-img {
+    width: 100%;
+    clear: both;
+}
+
+.works-img img {
+    width: 100%;
+}
+
+.works-img div {
+    display: inline-block;
+    width: 31%;
+    margin: 1%;
+}
+
+#contact h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+#contact button {
+    background-color: #ef5f60;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+#contact button:hover,
+#works button:hover {
+    background-color: #ba4c4d;
+}
+
+#what-we-do h3 {
+    text-transform: uppercase;
+    padding: 60px 0 30px 0;
+}
+
+#what-we-do img {
+    max-height: 47px;
+}
+
+.services {
+    padding-top: 30px;
+}
+
+.services div {
+    display: inline-block;
+    width: 20%;
+    margin: 0 2%; 
+    text-align: center;
+    vertical-align: top;
+}
+
+#journal h3 {
+    text-transform: uppercase;
+    padding: 60px 0 30px 0;
+}
+
+#journal {
+    padding-bottom: 80px;
+}
+
+.journal ul {
+    list-style: none;
+    display: inline;
+}
+
+.col {
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+ }
+
+#journal:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.journalimg {
+    float: left;
+    width: 30%;
+}
+
+.journalimg img {
+    width: 100%;
+    max-height: 180px;
+}
+
+.journal {
+    float: right;
+    width: 60%;
+}
+
+.col h3,
+.col h4 {
+    text-transform: uppercase;
+    padding: 0 0 10px 0 !important;
+}
+
+.col h4 {
+    color: #c3c3c3;
+}
+
+footer {
+    height: 205px;
+    clear:both;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #2d2d30;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        height: 150px;
+    }
+    
+    nav .logo {
+        padding: 15px 0 0;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        padding: 50px 20px 0;
+    }
+    
+    nav ul li img {
+        height: 25px;
+        padding-top: 5px;
+    }
+    
+    header h1 {
+        padding-top: 60px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    header p {
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+    
+    #works h3 {
+        margin-left: 2%;
+    }
+    
+    #works button {
+        margin-bottom: 15px;
+    }
+    
+    .services div {
+        width: 22%;
+        margin: 0 1%; 
+    }
+    
+    .col {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services div {
+        width: 45%;
+        margin: 25px 2%; 
+    }
+    
+    #what-we-do h3:first-child {
+        padding: 60px 0 30px 0;
+    }
+    
+    #what-we-do h3 {
+        padding: 20px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:) {
+    
+}
