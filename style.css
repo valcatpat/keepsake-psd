@@ -57,7 +57,7 @@ header {
 header h1 {
     color: #4d4d4d;
     text-transform: uppercase;
-    padding-top: 60px;
+    padding-top: 2em;
 }
 
 header p {
@@ -78,6 +78,7 @@ header p {
 #works h3 {
     text-transform: uppercase;
     float: left;
+    margin-left: 1%;
 }
 
 #works button {
@@ -217,6 +218,10 @@ footer p {
     margin-bottom: 20px;
 }
 
+footer a:hover {
+    opacity: 0.7;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
@@ -250,7 +255,7 @@ footer p {
     }
     
     header h1 {
-        padding-top: 60px;
+        padding-top: 1.5em;
         font-size: 30px;
         text-align: center;
     }
@@ -261,10 +266,6 @@ footer p {
 
     .wrapper {
         width: 90%;
-    }
-    
-    #works h3 {
-        margin-left: 2%;
     }
     
     #works button {
@@ -287,6 +288,10 @@ footer p {
     nav {
         width: 100%;
         margin: 0 auto;
+    }
+    
+    header h1 {
+        padding-top: 1em;
     }
     
     .services div {
