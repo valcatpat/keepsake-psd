@@ -23,25 +23,26 @@ nav {
     margin: 0 auto;
 }
 
-nav .logo {
+.logo {
     padding: 50px 0;
+    float: left;
 }
 
-nav a {
+.nav-links a {
     color: #4d4d4d;
     text-decoration: none;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #F06167;
 }
 
-nav ul {
+.nav-links ul {
     list-style: none;
     float: right;
 }
 
-nav ul li {
+.nav-links ul li {
     display: inline-block;
     text-transform: uppercase;
     font-weight: 700;
@@ -76,7 +77,6 @@ header p {
 
 #works h3 {
     text-transform: uppercase;
-    margin-left: 1%;
     float: left;
 }
 
@@ -220,6 +220,7 @@ footer p {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
+  
     nav {
         width: 80%;
         margin: 0 auto;
@@ -229,19 +230,21 @@ footer p {
     nav .logo {
         padding: 15px 0 0;
         display: block;
-        margin: 0 auto;
-    }
-    
-    nav ul {
+        margin: auto;
         float: none;
-        text-align: center;
     }
     
-    nav ul li {
+    .nav-links ul {
+        text-align: center;
+        float: none;
+        clear: both;
+    }
+    
+    .nav-links ul li {
         padding: 50px 20px 0;
     }
     
-    nav ul li img {
+    .nav-links ul li img {
         height: 25px;
         padding-top: 5px;
     }
@@ -280,6 +283,12 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+    
+    nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
     .services div {
         width: 45%;
         margin: 25px 2%; 
@@ -294,6 +303,69 @@ footer p {
     }
 }
 
-@media screen and (max-width:) {
+@media screen and (max-width: 675px) {
+    
+    .works-img div {
+        width: 47.5%;
+        margin: 1% 1%;
+    }
+    
+    .nav-links ul {
+        float: none;
+        height: 0;
+        overflow: hidden;
+        z-index: 99999;
+        position: relative;
+    }
+    
+    .nav-links ul.open {
+        height: auto;
+    }
+    
+    #mobile-nav {
+        background: url('img/burger-menu-icon.png') no-repeat center;
+        height: 40px;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        color: #fff; 
+    }
 
+    .nav-links ul li {
+        float: none;
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        background-color: #4d4d4d;
+        border-top: 1px solid #fff;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #works {
+        padding-top: 60px;
+    }
+    
+    .works-img div {
+        width: 70%;
+        margin: 10px 15%;
+    }
+    
+    #works h3 {
+        float: none;
+        text-align: center;
+    }
+
+    #works button {
+        display: block;
+        float: none;
+        margin: 20px auto;
+    }
+ 
+    .services div {
+        width: 70%;
+        margin: 20px 15%; 
+    }
 }
