@@ -1,31 +1,59 @@
-/* 
-
-nav text - #4d4d4d;
-header text - #4d4d4d;
-header background - #F2F3F5
-main text- #393939
-button color - #F06167
-lighter text color - #C7C7C7
-footer  color - #2D2C31
-
-*/
+/*-----Global Styles-----*/
 
 * {
-    font-family: 'Open Sans Condensed', sans-serif;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.banner,
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/*-----Buttons-----*/
+
+button {
+    background-color: #ef5f60;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.works button {
+    font-size: 14.29px;
+    float: right;
+    height: 42px;
+    margin-bottom: 15px;
+    margin-right: 1.5%;
+    width: 123px;    
+}
+
+.contact button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-align: center;    
+}
+
+.contact button:hover,
+.works button:hover {
+    background-color: #ba4c4d;
+}
+
+/*-----Navigation-----*/
+
 nav {
     height: 205px;
-    width: 70%;
     margin: 0 auto;
+    width: 70%;    
 }
 
 .logo {
-    padding: 50px 0;
     float: left;
+    padding: 50px 0;
 }
 
 .nav-links a {
@@ -38,16 +66,18 @@ nav {
 }
 
 .nav-links ul {
-    list-style: none;
     float: right;
+    list-style: none;
 }
 
 .nav-links ul li {
     display: inline-block;
-    text-transform: uppercase;
     font-weight: 700;
     padding: 50px 20px;
+    text-transform: uppercase;
 }
+
+/*-----Header-----*/
 
 header {
     background-color: #f1f4f5;
@@ -56,8 +86,8 @@ header {
 
 header h1 {
     color: #4d4d4d;
-    text-transform: uppercase;
     padding-top: 2em;
+    text-transform: uppercase;
 }
 
 header p {
@@ -65,38 +95,21 @@ header p {
     padding-top: 10px;
 }
 
-.banner,
-.wrapper {
-    width: 70%;
-    margin: 0 auto;
-}
+/*-----Works Section-----*/
 
-#works {
+.works {
     padding-top: 80px;
 }
 
-#works h3 {
-    text-transform: uppercase;
+.works h3 {
     float: left;
     margin-left: 1%;
-}
-
-#works button {
-    border: none;
-    width: 123px;
-    height:42px;
-    background-color: #ef5f60;
-    color: #fff;
-    font-size: 14.29px;
     text-transform: uppercase;
-    float: right;
-    margin-bottom: 15px;
-    margin-right: 1.5%;
 }
 
 .works-img {
-    width: 100%;
     clear: both;
+    width: 100%;
 }
 
 .works-img img {
@@ -105,39 +118,25 @@ header p {
 
 .works-img div {
     display: inline-block;
-    width: 31%;
     margin: 1%;
+    width: 31%;
 }
 
-#contact h2 {
-    text-transform: uppercase;
+.contact h2 {
     font-weight: 300;
     text-align: center;
     padding: 60px 0 20px 0;
-}
-
-#contact button {
-    background-color: #ef5f60;
-    color: #fff;
-    border: none;
     text-transform: uppercase;
-    text-align: center;
-    display: block;
-    padding: 10px 15px;
-    margin: 0 auto;
 }
 
-#contact button:hover,
-#works button:hover {
-    background-color: #ba4c4d;
-}
+/*-----What We Do Section-----*/
 
-#what-we-do h3 {
-    text-transform: uppercase;
+.what-we-do h3 {
     padding: 60px 0 30px 0;
+    text-transform: uppercase;
 }
 
-#what-we-do img {
+.what-we-do img {
     max-height: 47px;
 }
 
@@ -147,36 +146,38 @@ header p {
 
 .services div {
     display: inline-block;
-    width: 20%;
     margin: 0 2%; 
     text-align: center;
     vertical-align: top;
+    width: 20%;
 }
 
-#journal h3 {
-    text-transform: uppercase;
+/*-----Journal Section-----*/
+
+.journal h3 {
     padding: 60px 0 30px 0;
+    text-transform: uppercase;
 }
 
-#journal {
+.journal {
     padding-bottom: 80px;
 }
 
 .journal ul {
-    list-style: none;
     display: inline;
+    list-style: none;
 }
 
 .col {
-    width: 50%;
     float: left;
     padding-top: 30px;
+    width: 50%;
  }
 
-#journal:after {
-    display: block;
+.journal:after {
     content: "";
     clear: both;
+    display: block;
 }
 
 .journalimg {
@@ -185,33 +186,36 @@ header p {
 }
 
 .journalimg img {
-    width: 100%;
     max-height: 180px;
+    width: 100%;
 }
 
-.journal {
+.journal-col {
     float: right;
     width: 60%;
 }
 
 .col h3,
 .col h4 {
-    text-transform: uppercase;
     padding: 0 0 10px 0 !important;
+    text-transform: uppercase;
 }
 
 .col h4 {
     color: #c3c3c3;
 }
 
+/*-----Footer-----*/
+
 footer {
-    height: 205px;
-    clear:both;
-    padding-top: 60px;
-    padding-bottom: 30px;
     background-color: #2d2d30;
-    text-align: center;
+    clear: both;
     color: #fff;
+    height: 205px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    text-align: center;
+    
 }
 
 footer p {
@@ -222,27 +226,27 @@ footer a:hover {
     opacity: 0.7;
 }
 
-/* MEDIA QUERIES */
+/*-----Media Queries-----*/
 
 @media screen and (max-width: 1024px) {
   
     nav {
-        width: 80%;
-        margin: 0 auto;
         height: 150px;
+        margin: 0 auto;
+        width: 80%;
     }
     
     nav .logo {
-        padding: 15px 0 0;
         display: block;
-        margin: auto;
         float: none;
+        margin: auto;
+        padding: 15px 0 0;
     }
     
     .nav-links ul {
-        text-align: center;
-        float: none;
         clear: both;
+        float: none;
+        text-align: center;
     }
     
     .nav-links ul li {
@@ -255,8 +259,8 @@ footer a:hover {
     }
     
     header h1 {
-        padding-top: 1.5em;
         font-size: 30px;
+        padding-top: 1.5em;
         text-align: center;
     }
     
@@ -268,26 +272,26 @@ footer a:hover {
         width: 90%;
     }
     
-    #works button {
+    .works button {
         margin-bottom: 15px;
     }
     
     .services div {
-        width: 22%;
         margin: 0 1%; 
+        width: 22%;
     }
     
     .col {
-        width: 80%;
         margin: 0 10%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 768px) {
     
     nav {
-        width: 100%;
         margin: 0 auto;
+        width: 100%;
     }
     
     header h1 {
@@ -295,15 +299,15 @@ footer a:hover {
     }
     
     .services div {
-        width: 45%;
         margin: 25px 2%; 
+        width: 45%;
     }
     
-    #what-we-do h3:first-child {
+    .what-we-do h3:first-child {
         padding: 60px 0 30px 0;
     }
     
-    #what-we-do h3 {
+    .what-we-do h3 {
         padding: 20px 0 20px 0;
     }
 }
@@ -311,16 +315,16 @@ footer a:hover {
 @media screen and (max-width: 675px) {
     
     .works-img div {
-        width: 47.5%;
         margin: 1% 1%;
+        width: 47.5%;
     }
     
     .nav-links ul {
         float: none;
         height: 0;
         overflow: hidden;
-        z-index: 99999;
         position: relative;
+        z-index: 99999;
     }
     
     .nav-links ul.open {
@@ -338,39 +342,39 @@ footer a:hover {
     }
 
     .nav-links ul li {
-        float: none;
-        width: 100%;
-        display: block;
-        padding: 10px 0;
         background-color: #4d4d4d;
         border-top: 1px solid #fff;
+        display: block;
+        float: none;
+        padding: 10px 0;
+        width: 100%;
     }
     
 }
 
 @media screen and (max-width: 480px) {
-    #works {
+    .works {
         padding-top: 60px;
     }
     
     .works-img div {
-        width: 70%;
         margin: 10px 15%;
+        width: 70%;
     }
     
-    #works h3 {
+    .works h3 {
         float: none;
         text-align: center;
     }
 
-    #works button {
+    .works button {
         display: block;
         float: none;
         margin: 20px auto;
     }
  
     .services div {
-        width: 70%;
         margin: 20px 15%; 
+        width: 70%;
     }
 }
